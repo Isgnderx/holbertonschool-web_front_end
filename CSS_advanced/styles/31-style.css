@@ -63,7 +63,6 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --header-logo-link-position: absolute;
     --header-logo-link-top: -1rem;
     --header-logo-link-left: 0;
-    /* Task 31: Transition variables */
     --transition-duration: .3s;
     --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
@@ -127,7 +126,6 @@ ul.row { margin: 0; padding: 0; list-style: none; }
     bottom: 0; left: 0;
     background-color: var(--color-white);
     width: 0; height: 0.2rem;
-    /* Task 31: Transition for nav link */
     transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
@@ -149,16 +147,13 @@ ul.row { margin: 0; padding: 0; list-style: none; }
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
-    /* Task 31: Transition for button */
     transition-duration: var(--transition-duration);
     transition-property: color, background-color;
 }
 
-/* Task 30 & 31: Card Work Styling */
 .card-work .card-outer {
     position: relative;
     overflow: hidden;
-    /* Task 31: Transition for scaling */
     transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
@@ -175,7 +170,6 @@ ul.row { margin: 0; padding: 0; list-style: none; }
 
 .card-work:hover .card-image {
     transform: scale(1.2);
-    /* Task 31: Transition for image scale */
     transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
@@ -185,7 +179,6 @@ ul.row { margin: 0; padding: 0; list-style: none; }
     left: -0.1rem;
     right: -0.1rem;
     z-index: 1;
-    /* Task 31: Transition for overlay */
     transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
@@ -227,17 +220,27 @@ ul.row { margin: 0; padding: 0; list-style: none; }
 }
 
 .card-testimonial .card-avatar {
-    display: var(--card-testimonial-avatar-display);
-    width: var(--card-testimonial-avatar-width);
-    height: var(--card-testimonial-avatar-height);
-    border-radius: var(--card-testimonial-avatar-border-radius);
-    margin: var(--card-testimonial-avatar-margin);
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 0 auto 3rem;
 }
 
 .card-testimonial .card-quote {
     position: relative;
     margin: var(--card-testimonial-quote-margin);
     color: var(--card-testimonial-quote-color);
+}
+
+.card-testimonial .card-quote::before {
+    content: '\201C';
+    position: absolute;
+    top: -4.5rem;
+    left: -1rem;
+    color: #efeded;
+    font-size: 10rem;
+    z-index: -1;
 }
 
 .card-testimonial .card-quote cite {
@@ -267,8 +270,12 @@ ul.row { margin: 0; padding: 0; list-style: none; }
     margin: var(--section-tagline-margin); 
 }
 
+.section-hero .section-title {
+    margin-bottom: 5rem;
+}
+
 .section-hero .section-inner {
-    padding: var(--section-hero-padding);
+    padding: 10rem 40rem 2rem 0;
 }
 
 .card-services .card-title { margin: 0; }
