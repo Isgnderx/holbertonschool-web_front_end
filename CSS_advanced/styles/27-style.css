@@ -56,7 +56,6 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --card-testimonial-avatar-margin: 0 auto 3rem;
     --card-testimonial-quote-margin: 0;
     --card-testimonial-quote-color: var(--color-black);
-    /* Task 27: Hero variables */
     --section-hero-padding: 10rem 40rem 2rem 0;
 }
 
@@ -124,11 +123,11 @@ ul.row { margin: 0; padding: 0; list-style: none; }
 }
 
 .card-testimonial .card-avatar {
-    display: var(--card-testimonial-avatar-display);
-    width: var(--card-testimonial-avatar-width);
-    height: var(--card-testimonial-avatar-height);
-    border-radius: var(--card-testimonial-avatar-border-radius);
-    margin: var(--card-testimonial-avatar-margin);
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 0 auto 3rem;
 }
 
 .card-testimonial .card-quote {
@@ -165,8 +164,12 @@ ul.row { margin: 0; padding: 0; list-style: none; }
 }
 
 /* Task 27: Hero Section Styling */
+.section-hero .section-title {
+    margin-bottom: 5rem;
+}
+
 .section-hero .section-inner {
-    padding: var(--section-hero-padding);
+    padding: 10rem 40rem 2rem 0;
 }
 
 .card-services .card-title { margin: 0; }
