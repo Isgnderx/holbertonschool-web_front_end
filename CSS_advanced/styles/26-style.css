@@ -47,7 +47,6 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --button-hover-color: var(--color-white);
     --button-hover-text-decoration: none;
     --button-hover-background: var(--color-primary);
-    /* Task 26: Testimonial variables */
     --card-testimonial-padding: 0 0 5rem 0;
     --card-testimonial-text-align: center;
     --card-testimonial-avatar-display: block;
@@ -119,8 +118,8 @@ ul.row { margin: 0; padding: 0; list-style: none; }
 
 /* Task 26: Testimonial Styling */
 .card-testimonial {
-    text-align: var(--card-testimonial-text-align);
-    padding: var(--card-testimonial-padding);
+    text-align: center;
+    padding: 0 0 5rem 0;
 }
 
 .card-testimonial .card-avatar {
@@ -133,7 +132,7 @@ ul.row { margin: 0; padding: 0; list-style: none; }
 
 .card-testimonial .card-quote {
     position: relative;
-    margin: var(--card-testimonial-quote-margin);
+    margin: 0;
     color: var(--card-testimonial-quote-color);
 }
 
