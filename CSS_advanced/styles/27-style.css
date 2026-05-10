@@ -118,8 +118,8 @@ ul.row { margin: 0; padding: 0; list-style: none; }
 }
 
 .card-testimonial {
-    text-align: var(--card-testimonial-text-align);
-    padding: var(--card-testimonial-padding);
+    text-align: center;
+    padding: 0 0 5rem 0;
 }
 
 .card-testimonial .card-avatar {
@@ -132,7 +132,7 @@ ul.row { margin: 0; padding: 0; list-style: none; }
 
 .card-testimonial .card-quote {
     position: relative;
-    margin: var(--card-testimonial-quote-margin);
+    margin: 0;
     color: var(--card-testimonial-quote-color);
 }
 
@@ -164,6 +164,10 @@ ul.row { margin: 0; padding: 0; list-style: none; }
 }
 
 /* Task 27: Hero Section Styling */
+.section-hero {
+    background-size: 90rem auto;
+}
+
 .section-hero .section-title {
     margin-bottom: 5rem;
 }
